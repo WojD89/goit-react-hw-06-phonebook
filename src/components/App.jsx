@@ -1,16 +1,16 @@
-export const App = () => {
+import ContactForm from '../redux/contacts/ContactForm/ContactForm.js'
+import ContactList from '../redux/contacts/ContactList/ContactList.js';
+import Filter from '../redux/contacts/Filter/Filter.js';
+import './App.css'
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <h1 className='title'>Phonebook</h1>
+      <ContactForm />
+      <Filter />
+      <ContactList />
     </div>
   );
-};
+}
+
+export default App;
